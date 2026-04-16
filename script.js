@@ -1,15 +1,18 @@
-async function loadData() {
-    const url = "https://opendata.bristol.gov.uk/api/records/1.0/search/?dataset=car-parks";
-
-    const response = await fetch(url);
-    const data = await response.json();
+function loadData() {
+    const carParks = [
+        "Cabot Circus Car Park",
+        "Trenchard Street Car Park",
+        "Prince Street Car Park",
+        "The Galleries Car Park",
+        "Clifton Down Car Park"
+    ];
 
     const list = document.getElementById("list");
     list.innerHTML = "";
 
-    data.records.forEach(record => {
+    carParks.forEach(function(carPark) {
         const li = document.createElement("li");
-        li.textContent = record.fields.name || "Unknown car park";
+        li.textContent = carPark;
         list.appendChild(li);
     });
 }
