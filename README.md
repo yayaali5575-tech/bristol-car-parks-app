@@ -24,11 +24,11 @@ The application displays a list of Bristol car parks when the user clicks a butt
 3. View the list of car parks displayed  
 
 ## Live Website
-https://yayaaali5575-tech.github.io/bristol-car-parks-app/
+https://yayaali5575-tech.github.io/bristol-car-parks-app/
+
 
 ## GitHub Repository
-https://github.com/yayaaali5575-tech/bristol-car-parks-app
-
+https://github.com/yayaali5575-tech/bristol-car-parks-app
 ## Project Structure
 - `index.html` – main webpage  
 - `script.js` – handles button functionality and displays data  
